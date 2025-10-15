@@ -14,8 +14,8 @@ Provides [ray.so](https://ray.so/) as a REST API version. Make beautiful and pre
 
 | Parameter    | Default value   | Type             | Description                                                                                                                                    |
 | ------------ | --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `code `      | None (required) | String           | The code which is used to make the screenshot.                                                                                                 |
-| `title `     | `"Untitled-1"`  | String           | The title will be displayed on top of the code box.                                                                                            |
+| `code`      | None (required) | String           | The code which is used to make the screenshot.                                                                                                 |
+| `title`     | `"Untitled-1"`  | String           | The title will be displayed on top of the code box.                                                                                            |
 | `theme`      | `"breeze"`      | String           | There are several options of how your box will look like. Available themes: vercel, supabase, tailwind, bitmap, noir, ice, sand, forest, mono, breeze, candy, crimson, falcon, meadow, midnight, raindrop, sunset |
 | `background` | `true`          | Boolean          | If disabled, it will create an image of code box only, without background.                                                                     |
 | `darkMode`   | `true`          | Boolean          | If disabled, it will change your theme to its light version.                                                                                   |
@@ -48,7 +48,29 @@ http://localhost:3000/api?code=console.log(%22Hello%20World%22)%3B&language=java
 
 # Deployment
 
-# Deployment
+## Deploy to Vercel
+
+The easiest way to deploy this API is with Vercel:
+
+1. Install the Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+2. Deploy from the project directory:
+
+```bash
+vercel
+```
+
+3. Follow the prompts to link or create a new Vercel project
+
+4. Your API will be live at: `https://your-project-name.vercel.app/api`
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/akashrchandran/rayso-api)
+
+## Deploy to Heroku
 
 To deploy the Rayso-API on Heroku, you can use the Heroku Button. Just click the button below and follow the instructions:
 
